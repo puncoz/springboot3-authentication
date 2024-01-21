@@ -1,7 +1,7 @@
 plugins {
     java
-    id("org.springframework.boot") version "3.2.2"
-    id("io.spring.dependency-management") version "1.1.4"
+    alias(libs.plugins.springframework.boot)
+    alias(libs.plugins.spring.dependency.management)
 }
 
 group = "com.practice"
@@ -22,17 +22,20 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation(libs.springboot.starter.web)
+    implementation(libs.springboot.starter.security)
+    implementation(libs.springboot.starter.data.jpa)
+    implementation(libs.jsonwebtoken.api)
 
-    compileOnly("org.projectlombok:lombok")
-    runtimeOnly("org.postgresql:postgresql")
+    compileOnly(libs.lombok)
+    runtimeOnly(libs.postgresql)
+    runtimeOnly(libs.jsonwebtoken.impl)
+    runtimeOnly(libs.jsonwebtoken.jackson)
 
-    annotationProcessor("org.projectlombok:lombok")
+    annotationProcessor(libs.lombok)
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.springframework.security:spring-security-test")
+    testImplementation(libs.springboot.starter.test)
+    testImplementation(libs.springboot.security.test)
 }
 
 tasks.withType<Test> {
