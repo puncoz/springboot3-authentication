@@ -1,0 +1,23 @@
+### Demo API
+GET http://localhost:8080/api/v1/demo
+Accept: application/json
+
+### Register API
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Ram",
+  "lastName": "Shrestha",
+  "email": "ram.shrestha@gmail.com",
+  "password": "password"
+}
+
+### Login API
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "ram.shrestha@gmail.com",
+  "password": "password"
+}
