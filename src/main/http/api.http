@@ -1,6 +1,11 @@
-### Demo API
+### Secured API without token
 GET http://localhost:8080/api/v1/demo
 Accept: application/json
+
+### Secured API with token
+GET http://localhost:8080/api/v1/demo
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJyYW0uc2hyZXN0aGFAZ21haWwuY29tIiwiaWF0IjoxNzA1ODk3ODgxLCJleHAiOjE3MDU5ODQyODF9.DEWVr0Nl-EyZ-MWzLQ5xW4dXuuAn0cHukCVx6i-17ANc4NlQfrF-u-l4np-f2YfC
 
 ### Register API
 POST http://localhost:8080/api/v1/auth/register
