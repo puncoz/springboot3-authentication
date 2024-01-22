@@ -5,7 +5,7 @@ Accept: application/json
 ### Secured API with token
 GET http://localhost:8080/api/v1/demo
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJyYW0uc2hyZXN0aGFAZ21haWwuY29tIiwiaWF0IjoxNzA1ODk3ODgxLCJleHAiOjE3MDU5ODQyODF9.DEWVr0Nl-EyZ-MWzLQ5xW4dXuuAn0cHukCVx6i-17ANc4NlQfrF-u-l4np-f2YfC
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJyYW0uc2hyZXN0aGFAZ21haWwuY29tIiwiaWF0IjoxNzA1OTAwMTgxLCJleHAiOjE3MDU5ODY1ODF9.OBlBx1Wwazz4bqzsjiC3GC5hrxV_puZjSa_oC6srYKelMf-Gjlv2kfRg3iprVTk4
 
 ### Register API
 POST http://localhost:8080/api/v1/auth/register
